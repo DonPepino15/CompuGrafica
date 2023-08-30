@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta hhtp-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fav Icon-->
+
+    <link rel="shortcut Icon" href="src/imagenes/imagen_2023-08-15_210646562.png" type="image/png">
+    <title>Menu - 3D options</title>
+    <link rel="stylesheet" href="./css/main.css" type="style">
+
+    <!-- Estilo Bootsrap-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Js o logica funciones de bootsrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+    <!-- THREE JS-->
+    <link rel="stylesheet" href="/3DWEB COMPU/css/main.css">
+    <script src="../../libs/libs/three.min.js"></script>
+    <script src="../JS/main.js"></script>
+    <script src="/libs/libs/OrbitControls.js"></script>
+
+</head>
+
+
+<body onload="StartScene()">
+    <nav class="navbar bg-dark border-bottom border-body data-bs-theme=" dark><!-- Color barra arriba-->
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="/3DWEB COMPU/src/imagenes/INTENTO8000 (1).png" alt="Bootstrap" width="10%">
+                <!-- Imagenes incono barra ngra-->
+            </a>
+            <!-- BOTONES -->
+            <button type="button" class="btn btn-light" onclick="createGeometry('cube')">Cubo</button>
+            <button type="button" class="btn btn-light" onclick="createGeometry('torus')">Torus</button>
+            <button type="button" class="btn btn-light" onclick="createGeometry('cono')">Cono</button>
+        </div>
+    </nav>
+
+    <canvas style="position:fixed ;" id="app">
+
+    </canvas>
+    <!-- FOOTER-->
+
+
+    <footer class="navbar fixed-bottom bg-dark text - center text-lg-start">
+
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); color: white;">
+            © 2023 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">AlejandroLasso</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+</body>
+
+</html>
